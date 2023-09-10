@@ -12,9 +12,8 @@ Operasi _undo_ dan _redo_ dapat diimplementasikan dengan menggunakan dua struktu
 
 2. Anda memasukkan karakter I, B dan U dalam teks editor, maka _mainStack_ berisi ketiga karakter tersebut dengan karakter U berada di posisi paling atas. 
 
-  ![](fig/text_ibu.png | width=50}
+<img src="fig/text_ibu.png" width="200" height="50" />
 
-  ![](https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png | width=100)
 
 3. Apabila anda klik tombol _redo_ dua kali, maka karakter U dan B akan dikeluarkan dari _mainStack_ untuk masuk ke _historyStack_.
 
