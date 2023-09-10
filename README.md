@@ -5,4 +5,6 @@ This space is a repository of computer programming projects I created for studen
 ## D3 Manajemen Informatika, Ganjil 2023.
 ### [Text Editor/ Editor Teks](https://pages.github.com/)
 Implementing a text editor with undo and redo buttons, which use the stack data structure.
+
+
 Membuat teks editor dengan fitur _undo_ dan _redo_, yang harus diimplementasi dengan struktur data _stack_.
