@@ -4,7 +4,7 @@ Di tugas ini anda diminta membuat sebuah teks editor sederhana di Java dengan fi
 
 _Stack_ adalah sebuah struktur data yang bersifat _Last In First Out_ (LIFO). Objek yang pertama masuk ke _stack_ akan menjadi objek yang paling terakhir diambil dari _stack_. Sebaliknya, objek yang dapat diambil dari _stack_ adalah adalah objek yang terakhir masuk _stack_. 
 
-## Fitur _undo_ dan _redo_ di teks _editor_
+## ,Fitur _undo_ dan _redo_ di teks _editor_
 Operasi _undo_ dan _redo_ dapat diimplementasikan dengan menggunakan dua struktur data _stack_. Secara umum penggunaan _stack_ dalam fitur _undo_ dan _redo_ adalah sebagai berikut:
 1. Terdapat dua _stack_: 
   - stack utama (_mainStack_) yang akan menyimpan setiap karakter yang terlihat di layar anda.
@@ -21,7 +21,7 @@ Operasi _undo_ dan _redo_ dapat diimplementasikan dengan menggunakan dua struktu
 
 4. Anda kemudian memasukkan karakter baru yaitu N dan I, maka hal yang terjadi adalah:
  - Karakter N dan I masuk ke _mainStack_
- _ Ketika karakter N masuk _mainStack_, maka _historyStack_ akan dikosongkan.
+ _ Ketika karakter N masuk _mainStack_ , maka _historyStack_ akan dikosongkan.
 
 <img align="center" src="fig/text_add_ni.png" height="200" />
 
@@ -35,7 +35,7 @@ Operasi _undo_ dan _redo_ dapat diimplementasikan dengan menggunakan dua struktu
 
 
 ## Contoh solusi
-Contoh solusi dari program ini dapat dilihat di [asd_teks_editor.mp4]](asd_teks_editor.mp4)
+Contoh solusi dari program ini dapat dilihat di [asd_teks_editor.mp4](asd_teks_editor.mp4)
 
 ## _Template_ koding Java
 Untuk mengimplementasi teks editor ini, anda diberikan koding Java berikut:
@@ -55,15 +55,18 @@ Kumpulkan **TextEditor.java** dan ****TextEditorGUI.java** anda dalam sebuah zip
 
 
 ## Kriteria Penilaian
-Tombol huruf dan spasi dapat menambah karakter di layar  10
-Tombol _undo_ hanya aktif apabila operasi dapat dilakukan 5  
-Tombol _redo_ hanya aktif apabila operasi dapat dilakukan 5 
-Tombol _undo_ bekerja sesuai dengan deskripsi tugas 10
-Tombol _redo_ bekerja sesuai dengan deskripsi tugas 10
-Penggunaan _stack_ tepat untuk fitur _undo_ dan _redo_ 30
-Menggunakan ArrayStack.java untuk struktur data _stack_ 20
-Berkas koding mempunyai komentar yang cukup 5
-Berkas koding diformat sesuai rekomendasi Java Doc 5
+|Kriteria  | Poin |
+-------------------
+|Tombol huruf dan spasi dapat menambah karakter di layar  |10|
+|Tombol _undo_ hanya aktif apabila operasi dapat dilakukan |5 | 
+|Tombol _redo_ hanya aktif apabila operasi dapat dilakukan |5 |
+|Tombol _undo_ bekerja sesuai dengan deskripsi tugas |10|
+|Tombol _redo_ bekerja sesuai dengan deskripsi tugas |10|
+|Penggunaan _stack_ tepat untuk fitur _undo_ dan _redo_ |30|
+|Menggunakan ArrayStack.java untuk struktur data _stack_ |20|
+|Berkas koding mempunyai komentar yang cukup |5|
+|Berkas koding diformat sesuai rekomendasi Java Doc |5|
+---------------------------------------------------
 
 ## Integritas
 Tugas ini harus dikerjakan secara mandiri. Mahasiswa yang terindikasi menyontek akan mendapat nilai 0.
