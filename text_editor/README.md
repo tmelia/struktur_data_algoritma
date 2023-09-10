@@ -12,27 +12,26 @@ Operasi _undo_ dan _redo_ dapat diimplementasikan dengan menggunakan dua struktu
 
 2. Anda memasukkan karakter I, B dan U dalam teks editor, maka _mainStack_ berisi ketiga karakter tersebut dengan karakter U berada di posisi paling atas. 
 
-<p align="left" width="100%">
 <img align="center" src="fig/text_ibu.png" height="200" />
-</p>
+
 
 3. Apabila anda klik tombol _redo_ dua kali, maka karakter U dan B akan dikeluarkan dari _mainStack_ untuk masuk ke _historyStack_.
 
-  ![langkah 1](fig/text_rem_bu.png){width=50%}
+<img align="center" src="fig/text_rem_bu.png" height="200" />
 
 4. Anda kemudian memasukkan karakter baru yaitu N dan I, maka hal yang terjadi adalah:
  - Karakter N dan I masuk ke _mainStack_
  _ Ketika karakter N masuk _mainStack_, maka _historyStack_ akan dikosongkan.
 
-  ![langkah 1](fig/text_add_ni.png){width=50%}
+<img align="center" src="fig/text_add_ni.png" height="200" />
 
 5. Apabila anda klik _undo_ tiga kali, maka karakter I, N dan I akan berpindah dari _mainStack_ ke _historyStack_
 
-  ![langkah 1](fig/text_undo_ini.png){width=50%}
+<img align="center" src="fig/text_undo_ini.png" height="200" />
 
 6. Jika ingin mengembalikan kata INI, maka anda cukup klik _redo_ tiga kali, yang mengakibatkan karakter I, N dan I akan keluar dari _historyStack_ ke _mainStack_
 
-  ![langkah 1](fig/text_redo_ini.png){width=50%}
+<img align="center" src="fig/text_redo_ini.png" height="200" />
 
 
 ##Contoh solusi
@@ -41,7 +40,7 @@ Contoh solusi dari program ini dapat dilihat di [asd_teks_editor.mp4]](asd_teks_
 ##_Template_ koding Java
 Untuk mengimplementasi teks editor ini, anda diberikan koding Java berikut:
 1. [TextEditorGUI.java](TextEditorGUI.java) adalah kelas Java yang akan menampilkan GUI dari Teks Editor anda. Ketika dijalankan akan menampilkan panel sebagai berikut:
-![GUI](fig/gui.png){width=50%}
+<img align="center" src="fig/gui.png" height="200" />
 Di kelas ini, anda harus mengimplementasi fitur pengetikan huruf A-Z dan spasi. Apabila salah satu huruf/simbol diklik, maka akan muncul di _TextField_ di bagian atas panel. 
 
 2. [Stack.java](Stack.java) adalah kelas _interface_ yang mendefinisikan operasi untuk _stack_ yang sudah kita diskusikan di kelas. Kelas ini sudah lengkap, anda tidak perlu menambahkan koding anda.
