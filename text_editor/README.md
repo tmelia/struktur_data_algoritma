@@ -34,10 +34,10 @@ Operasi _undo_ dan _redo_ dapat diimplementasikan dengan menggunakan dua struktu
 <img align="center" src="fig/text_redo_ini.png" height="200" />
 
 
-##Contoh solusi
+## Contoh solusi
 Contoh solusi dari program ini dapat dilihat di [asd_teks_editor.mp4]](asd_teks_editor.mp4)
 
-##_Template_ koding Java
+## _Template_ koding Java
 Untuk mengimplementasi teks editor ini, anda diberikan koding Java berikut:
 1. [TextEditorGUI.java](TextEditorGUI.java) adalah kelas Java yang akan menampilkan GUI dari Teks Editor anda. Ketika dijalankan akan menampilkan panel sebagai berikut:
 <img align="center" src="fig/gui.png" height="200" />
@@ -50,11 +50,11 @@ Di kelas ini, anda harus mengimplementasi fitur pengetikan huruf A-Z dan spasi. 
 4. [TextEditor.java](TextEditor.java) adalah kelas Java yang mengimplementasikan logika untuk fitur _undo_ dan _redo_. Di kelas ini sebaiknya anda mendeklarasikan _stack_ utama dan pembantu. 
 
 
-##Instruksi pengumpulan
+## Instruksi pengumpulan
 Kumpulkan **TextEditor.java** dan ****TextEditorGUI.java** anda dalam sebuah zip file dan kumpulkan melalui Google Classroom dengan tenggat waktu: **Sabtu, 23 September 2023 jam 23:59**. Jangan lupa untuk menghapus deklarasi package (apabila ada) di koding Java anda.
 
 
-##Kriteria Penilaian
+## Kriteria Penilaian
 Tombol huruf dan spasi dapat menambah karakter di layar  10
 Tombol _undo_ hanya aktif apabila operasi dapat dilakukan 5  
 Tombol _redo_ hanya aktif apabila operasi dapat dilakukan 5 
@@ -65,7 +65,7 @@ Menggunakan ArrayStack.java untuk struktur data _stack_ 20
 Berkas koding mempunyai komentar yang cukup 5
 Berkas koding diformat sesuai rekomendasi Java Doc 5
 
-##Integritas
+## Integritas
 Tugas ini harus dikerjakan secara mandiri. Mahasiswa yang terindikasi menyontek akan mendapat nilai 0.
 
 
