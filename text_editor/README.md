@@ -56,7 +56,7 @@ Kumpulkan **TextEditor.java** dan ****TextEditorGUI.java** anda dalam sebuah zip
 
 ## Kriteria Penilaian
 |Kriteria  | Poin |
--------------------
+| --- | --- |
 |Tombol huruf dan spasi dapat menambah karakter di layar  |10|
 |Tombol _undo_ hanya aktif apabila operasi dapat dilakukan |5 | 
 |Tombol _redo_ hanya aktif apabila operasi dapat dilakukan |5 |
@@ -66,7 +66,7 @@ Kumpulkan **TextEditor.java** dan ****TextEditorGUI.java** anda dalam sebuah zip
 |Menggunakan ArrayStack.java untuk struktur data _stack_ |20|
 |Berkas koding mempunyai komentar yang cukup |5|
 |Berkas koding diformat sesuai rekomendasi Java Doc |5|
----------------------------------------------------
+
 
 ## Integritas
 Tugas ini harus dikerjakan secara mandiri. Mahasiswa yang terindikasi menyontek akan mendapat nilai 0.
