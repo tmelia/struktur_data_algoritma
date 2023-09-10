@@ -20,7 +20,7 @@ Operasi _undo_ dan _redo_ dapat diimplementasikan dengan menggunakan dua struktu
 <img align="center" src="fig/text_rem_bu.png" height="200" />
 
 4. Anda kemudian memasukkan karakter baru yaitu N dan I, maka hal yang terjadi adalah:
- - Karakter N dan I masuk ke _mainStack_
+ - Karakter N dan I masuk ke *mainStack*
  _ Ketika karakter N masuk _mainStack_ , maka _historyStack_ akan dikosongkan.
 
 <img align="center" src="fig/text_add_ni.png" height="200" />
@@ -41,7 +41,7 @@ Contoh solusi dari program ini dapat dilihat di [asd_teks_editor.mp4](asd_teks_e
 Untuk mengimplementasi teks editor ini, anda diberikan koding Java berikut:
 1. [TextEditorGUI.java](TextEditorGUI.java) adalah kelas Java yang akan menampilkan GUI dari Teks Editor anda. Ketika dijalankan akan menampilkan panel sebagai berikut:
 <img align="center" src="fig/gui.png" height="200" />
-Di kelas ini, anda harus mengimplementasi fitur pengetikan huruf A-Z dan spasi. Apabila salah satu huruf/simbol diklik, maka akan muncul di _TextField_ di bagian atas panel. 
+Di kelas ini, anda harus mengimplementasi fitur pengetikan huruf A-Z dan spasi. Apabila salah satu huruf/simbol diklik, maka akan muncul di *text field* di bagian atas panel. 
 
 2. [Stack.java](Stack.java) adalah kelas _interface_ yang mendefinisikan operasi untuk _stack_ yang sudah kita diskusikan di kelas. Kelas ini sudah lengkap, anda tidak perlu menambahkan koding anda.
 

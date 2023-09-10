@@ -1,4 +1,7 @@
-
+#Tisha Melia
+#tisha.melia[at]lecturer[dot]unri[dot]ac[dot]id
+#10 September 2023
+#ASD Programming projects
 
 public class ArrayStack<T> implements Stack<T>{
     public static final int CAPACITY=1000; //kapasitas stack

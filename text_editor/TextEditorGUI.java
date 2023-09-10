@@ -1,4 +1,7 @@
-
+#Tisha Melia
+#tisha.melia[at]lecturer[dot]unri[dot]ac[dot]id
+#10 September 2023
+#ASD Programming projects
 
 import java.awt.*;
 import java.awt.event.ActionEvent;
