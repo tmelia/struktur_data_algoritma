@@ -51,7 +51,7 @@ Di kelas ini, anda harus mengimplementasi fitur pengetikan huruf A-Z dan spasi. 
 
 
 ## Instruksi pengumpulan
-Kumpulkan **TextEditor.java** dan ****TextEditorGUI.java** anda dalam sebuah zip file dan kumpulkan melalui Google Classroom dengan tenggat waktu: **Sabtu, 23 September 2023 jam 23:59**. Jangan lupa untuk menghapus deklarasi package (apabila ada) di koding Java anda.
+Kumpulkan **TextEditor.java** dan **TextEditorGUI.java** anda dalam sebuah zip file dan kumpulkan melalui Google Classroom dengan tenggat waktu: **Sabtu, 23 September 2023 jam 23:59**. Jangan lupa untuk menghapus deklarasi package (apabila ada) di koding Java anda.
 
 
 ## Kriteria Penilaian
