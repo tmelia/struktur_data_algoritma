@@ -4,7 +4,7 @@ Di tugas ini anda diminta membuat sebuah teks editor sederhana di Java dengan fi
 
 _Stack_ adalah sebuah struktur data yang bersifat _Last In First Out_ (LIFO). Objek yang pertama masuk ke _stack_ akan menjadi objek yang paling terakhir diambil dari _stack_. Sebaliknya, objek yang dapat diambil dari _stack_ adalah adalah objek yang terakhir masuk _stack_. 
 
-## ,Fitur _undo_ dan _redo_ di teks _editor_
+## Fitur _undo_ dan _redo_ di teks _editor_
 Operasi _undo_ dan _redo_ dapat diimplementasikan dengan menggunakan dua struktur data _stack_. Secara umum penggunaan _stack_ dalam fitur _undo_ dan _redo_ adalah sebagai berikut:
 1. Terdapat dua _stack_: 
   - stack utama (_mainStack_) yang akan menyimpan setiap karakter yang terlihat di layar anda.
