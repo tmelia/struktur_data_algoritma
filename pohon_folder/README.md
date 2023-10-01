@@ -1,37 +1,20 @@
 # Pohon Berkas
 
-Di tugas ini anda diminta membuat sebuah teks editor sederhana di Java dengan fitur _undo_ dan _redo_ yang harus diimplementasi dengan struktur data _stack_. Operasi _undo_ akan membatalkan perintah terakhir di komputer sementara operasi _redo_ akan mengembalikan operasi terakhir yang dibatalkan. 
+Pohon/ _Tree_ adalah struktur data non-linear yang dapat digunakan untuk menyimpan struktur folder/berkas di komputer. Stuktur data Pohon terdiri dari simpul (_node_), dengan simpul akar (_root_) sebagai simpul teratas. Di tugas ini anda diberikan template koding Java yang akan membuat sebuah pohon berkas seperti gambar di bawah. Tugas anda adalah menambahkan fitur untuk dapat menghitung jumlah bytes yang disimpan dalam sebuah pohon berkas, yaitu jumlah kumulatif semua berkas di pohon tersebut. 
+<img align="center" src="fig/pohon.png" height="300" />
 
-_Stack_ adalah sebuah struktur data yang bersifat _Last In First Out_ (LIFO). Objek yang pertama masuk ke _stack_ akan menjadi objek yang paling terakhir diambil dari _stack_. Sebaliknya, objek yang dapat diambil dari _stack_ adalah adalah objek yang terakhir masuk _stack_. 
+## _Template_ koding Java
+Untuk mengimplementasi teks editor ini, anda diberikan koding Java berikut:
+1. [TextEditorGUI.java](TextEditorGUI.java) adalah kelas Java yang akan menampilkan GUI dari Teks Editor anda. Ketika dijalankan akan menampilkan panel sebagai berikut:
+<img align="center" src="fig/gui.png" height="200" />
+Di kelas ini, anda harus mengimplementasi fitur pengetikan huruf A-Z dan spasi. Apabila salah satu huruf/simbol diklik, maka akan muncul di *text field* di bagian atas panel. 
 
-## Fitur _undo_ dan _redo_ di teks _editor_
-Operasi _undo_ dan _redo_ dapat diimplementasikan dengan menggunakan dua struktur data _stack_. Secara umum penggunaan _stack_ dalam fitur _undo_ dan _redo_ adalah sebagai berikut:
-1. Terdapat dua _stack_: 
-  - stack utama (_mainStack_) yang akan menyimpan setiap karakter yang terlihat di layar anda.
-  - stack pembantu (_historyStack_) yang akan menyimpan setiap karakter yang dikeluarkan dari _mainStack_ karena operasi _undo_
+2. [Stack.java](Stack.java) adalah kelas _interface_ yang mendefinisikan operasi untuk _stack_ yang sudah kita diskusikan di kelas. Kelas ini sudah lengkap, anda tidak perlu menambahkan koding anda.
 
-2. Anda memasukkan karakter I, B dan U dalam teks editor, maka _mainStack_ berisi ketiga karakter tersebut dengan karakter U berada di posisi paling atas. 
+3. [ArrayStack.java](ArrayStack.java) adalah kelas Java yang mengimplementasi _interface_ Stack. Kelas ini sudah lengkap, anda tidak perlu menambahkan koding anda.
 
-<img align="center" src="fig/text_ibu.png" height="200" />
+4. [TextEditor.java](TextEditor.java) adalah kelas Java yang mengimplementasikan logika untuk fitur _undo_ dan _redo_. Di kelas ini sebaiknya anda mendeklarasikan _stack_ utama dan pembantu. 
 
-
-3. Apabila anda klik tombol _redo_ dua kali, maka karakter U dan B akan dikeluarkan dari _mainStack_ untuk masuk ke _historyStack_.
-
-<img align="center" src="fig/text_rem_bu.png" height="200" />
-
-4. Anda kemudian memasukkan karakter baru yaitu N dan I, maka hal yang terjadi adalah:
- - Karakter N dan I masuk ke *mainStack*
- _ Ketika karakter N masuk _mainStack_ , maka _historyStack_ akan dikosongkan.
-
-<img align="center" src="fig/text_add_ni.png" height="200" />
-
-5. Apabila anda klik _undo_ tiga kali, maka karakter I, N dan I akan berpindah dari _mainStack_ ke _historyStack_
-
-<img align="center" src="fig/text_undo_ini.png" height="200" />
-
-6. Jika ingin mengembalikan kata INI, maka anda cukup klik _redo_ tiga kali, yang mengakibatkan karakter I, N dan I akan keluar dari _historyStack_ ke _mainStack_
-
-<img align="center" src="fig/text_redo_ini.png" height="200" />
 
 
 ## Contoh solusi
@@ -64,17 +47,6 @@ Downloads: 152441
 C:/: 141795777
 ```
 
-## _Template_ koding Java
-Untuk mengimplementasi teks editor ini, anda diberikan koding Java berikut:
-1. [TextEditorGUI.java](TextEditorGUI.java) adalah kelas Java yang akan menampilkan GUI dari Teks Editor anda. Ketika dijalankan akan menampilkan panel sebagai berikut:
-<img align="center" src="fig/gui.png" height="200" />
-Di kelas ini, anda harus mengimplementasi fitur pengetikan huruf A-Z dan spasi. Apabila salah satu huruf/simbol diklik, maka akan muncul di *text field* di bagian atas panel. 
-
-2. [Stack.java](Stack.java) adalah kelas _interface_ yang mendefinisikan operasi untuk _stack_ yang sudah kita diskusikan di kelas. Kelas ini sudah lengkap, anda tidak perlu menambahkan koding anda.
-
-3. [ArrayStack.java](ArrayStack.java) adalah kelas Java yang mengimplementasi _interface_ Stack. Kelas ini sudah lengkap, anda tidak perlu menambahkan koding anda.
-
-4. [TextEditor.java](TextEditor.java) adalah kelas Java yang mengimplementasikan logika untuk fitur _undo_ dan _redo_. Di kelas ini sebaiknya anda mendeklarasikan _stack_ utama dan pembantu. 
 
 
 ## Instruksi pengumpulan
