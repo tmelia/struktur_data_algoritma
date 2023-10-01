@@ -11,7 +11,7 @@ Untuk membuat pohon berkas, anda diberikan koding Java berikut:
 
 2. [Node.java](Node.java) adalah kelas Java yang merepresentasikan sebuah simpul di pohon berkas. Setiap simpul menyimpan nama berkas, ukuran berkas dan berkas/folder di bawahnya. Anda diperbolehkan menambah method/variabel baru yang anda butuhkan
 
-4. [Tree.java](Tree.java) adalah kelas Java yang merepresentasikan pohon berkas. Setiap pohon memiliki sebuah simpul akar (_root node_). Di kelas ini terdapat method _calculateSize()_ yang harus anda selesaikan implementasinya. Method ini akan mengembalikan ukuran semua berkas (kumulatif) yang ada di pohon tersebut dalam bytes. Berikut adalah contoh luaran program yang benar dari _FolderTree.java_ ketika method _calculateSize()_ diimplementasikan dengan benar. Anda diperbolehkan menambah method/variabel baru yang anda butuhkan
+4. [Tree.java](Tree.java) adalah kelas Java yang merepresentasikan pohon berkas. Setiap pohon memiliki sebuah simpul akar (_root node_). Di kelas ini terdapat method _calculateSize()_ yang harus anda selesaikan implementasinya. Method ini akan mengembalikan ukuran semua berkas (kumulatif) yang ada di pohon tersebut dalam bytes. Berikut adalah luaran program dari _FolderTree.java_ ketika method _calculateSize()_ diimplementasikan dengan benar. Anda diperbolehkan menambah method/variabel baru yang anda butuhkan
 
 ## Contoh luaran program
 ```{r tidy=TRUE}
