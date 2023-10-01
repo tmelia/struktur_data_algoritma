@@ -1,23 +1,19 @@
 # Pohon Berkas
 
-Pohon/ _Tree_ adalah struktur data non-linear yang dapat digunakan untuk menyimpan struktur folder/berkas di komputer. Stuktur data Pohon terdiri dari simpul (_node_), dengan simpul akar (_root_) sebagai simpul teratas. Di tugas ini anda diberikan template koding Java yang akan membuat sebuah pohon berkas seperti gambar di bawah. Tugas anda adalah menambahkan fitur untuk dapat menghitung jumlah bytes yang disimpan dalam sebuah pohon berkas, yaitu jumlah kumulatif semua berkas di pohon tersebut. 
+Pohon/_Tree_ adalah struktur data non-linear yang dapat digunakan untuk menyimpan struktur folder/berkas di komputer. Stuktur data Pohon terdiri dari simpul (_node_), dengan simpul akar (_root_) sebagai simpul teratas. Di tugas ini anda diberikan template koding Java yang akan membuat sebuah pohon berkas seperti gambar di bawah. Tugas anda adalah menambahkan fitur untuk dapat menghitung jumlah bytes yang disimpan dalam sebuah pohon berkas, yaitu jumlah kumulatif semua berkas di pohon tersebut. 
+
+
 <img align="center" src="fig/pohon.png" height="300" />
 
 ## _Template_ koding Java
-Untuk mengimplementasi teks editor ini, anda diberikan koding Java berikut:
-1. [TextEditorGUI.java](TextEditorGUI.java) adalah kelas Java yang akan menampilkan GUI dari Teks Editor anda. Ketika dijalankan akan menampilkan panel sebagai berikut:
-<img align="center" src="fig/gui.png" height="200" />
-Di kelas ini, anda harus mengimplementasi fitur pengetikan huruf A-Z dan spasi. Apabila salah satu huruf/simbol diklik, maka akan muncul di *text field* di bagian atas panel. 
+Untuk membuat pohon berkas, anda diberikan koding Java berikut:
+1. [FolderTree.java](FolderTree.java) adalah kelas Java yang membuat pohon seperti gambar di atas. Perhatikan cara pohon dideklarasikan dan simpul anak ditambahkan. Ketika sebuah simpul anak ditambahkan, maka kita memberikan informasi dimana simpul ini akan ditambahkan (_parent folder_), nama berkas dan ukuran berkas dalam bytes. Di akhir koding Java ini terdapat pemanggilan method _calculateSize()_ yang harus anda selesaikan implementasinya.
 
-2. [Stack.java](Stack.java) adalah kelas _interface_ yang mendefinisikan operasi untuk _stack_ yang sudah kita diskusikan di kelas. Kelas ini sudah lengkap, anda tidak perlu menambahkan koding anda.
+2. [Node.java](Node.java) adalah kelas Java yang merepresentasikan sebuah simpul di pohon berkas. Setiap simpul menyimpan nama berkas, ukuran berkas dan berkas/folder di bawahnya. Anda diperbolehkan menambah method/variabel baru yang anda butuhkan
 
-3. [ArrayStack.java](ArrayStack.java) adalah kelas Java yang mengimplementasi _interface_ Stack. Kelas ini sudah lengkap, anda tidak perlu menambahkan koding anda.
+4. [Tree.java](Tree.java) adalah kelas Java yang merepresentasikan pohon berkas. Setiap pohon memiliki sebuah simpul akar (_root node_). Di kelas ini terdapat method _calculateSize()_ yang harus anda selesaikan implementasinya. Method ini akan mengembalikan ukuran semua berkas (kumulatif) yang ada di pohon tersebut dalam bytes. Berikut adalah contoh luaran program yang benar dari _FolderTree.java_ ketika method _calculateSize()_ diimplementasikan dengan benar. Anda diperbolehkan menambah method/variabel baru yang anda butuhkan
 
-4. [TextEditor.java](TextEditor.java) adalah kelas Java yang mengimplementasikan logika untuk fitur _undo_ dan _redo_. Di kelas ini sebaiknya anda mendeklarasikan _stack_ utama dan pembantu. 
-
-
-
-## Contoh solusi
+## Contoh luaran program
 ```{r tidy=TRUE}
 Slide1.pptx: 67545366
 Slide2.pptx: 6820603
@@ -47,24 +43,15 @@ Downloads: 152441
 C:/: 141795777
 ```
 
-
-
 ## Instruksi pengumpulan
-Kumpulkan **TextEditor.java** dan **TextEditorGUI.java** anda dalam sebuah zip file dan kumpulkan melalui Google Classroom dengan tenggat waktu: **Sabtu, 23 September 2023 jam 23:59**. Jangan lupa untuk menghapus deklarasi package (apabila ada) di koding Java anda.
+Kumpulkan **Node.java** dan **Tree.java** anda melalui codepost dengan tenggat waktu: **Sabtu, 14 Oktober 2023 jam 23:59**. 
 
 
 ## Kriteria Penilaian
 |Kriteria  | Poin |
 | --- | --- |
-|Tombol huruf dan spasi dapat menambah karakter di layar  |10|
-|Tombol _undo_ hanya aktif apabila operasi dapat dilakukan |5 | 
-|Tombol _redo_ hanya aktif apabila operasi dapat dilakukan |5 |
-|Tombol _undo_ bekerja sesuai dengan deskripsi tugas |10|
-|Tombol _redo_ bekerja sesuai dengan deskripsi tugas |10|
-|Penggunaan _stack_ tepat untuk fitur _undo_ dan _redo_ |30|
-|Menggunakan ArrayStack.java untuk struktur data _stack_ |20|
-|Berkas koding mempunyai komentar yang cukup |5|
-|Berkas koding diformat sesuai rekomendasi Java Doc |5|
+|Hasil _Unit Test_ di codepost |70|
+|Menggunakan _Tree.java_ dan _Node.java_ yang sudah diberikan|30|
 
 
 ## Integritas
